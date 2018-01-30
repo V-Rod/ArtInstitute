@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text'); /*fpr header*/
+@import url('https://fonts.googleapis.com/css?family=Space+Mono'); /*for navigation*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:700'); /*for headings font-family: 'Playfair Display SC', serif; */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');/*for content font-family: 'Playfair Display SC', serif; */
+
+html, body {
+  box-sizing: border-box;
+  background-color: #e8f0ff;
+  height: 100%;
+  padding: 5px;
+  margin: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  background-color: red;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+  "h h h h h h"
+  "n n n n n n"
+  "a1 a1 a1 a1 i1 i1"
+  "i2 i2 a2 a2 a2 a2"
+  "a3 a3 a3 a3 i3 i3"
+  "i4 i4 a4 a4 a4 a4"
+  "f f f f f f";
+}
+
+.container > div > img {
+  justify-content: center;
+  border: 5px black solid;
+}
+
+.header {
+  grid-area: h;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 70px;
+}
+
+.nav {
+  grid-area: n;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+}
+
+.copy {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.headline {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+}
+
+.headline2 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.article1 {
+  grid-area: a1;
+}
+
+.article2 {
+  grid-area: a2;
+}
+
+.article3 {
+  grid-area: a3;
+}
+
+.article4 {
+  grid-area: a4;
+}
+
+.image1 {
+  grid-area: i1;
+}
+
+.image2 {
+  grid-area: i2;
+
+}
+
+.image3 {
+  grid-area: i3;
+}
+
+.image4 {
+  grid-area: i4;
+}
+
+.footer {
+  grid-area: f;
+  font-weight: bold;
+}
